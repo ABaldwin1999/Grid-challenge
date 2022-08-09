@@ -42,3 +42,29 @@ aside{
     text-align: center;
     grid-row: 3 / span 1;
 }
+
+@media only screen and (max-width: 480px) {
+    .Grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 6fr 2fr 1fr;
+        gap: 10px;
+    }
+    header{
+        grid-row: 1;
+        
+    }
+    nav{
+        grid-row: 2;
+    }
+    main{
+        grid-column: auto;
+        grid-row: 3;
+    }
+    aside{
+        grid-row: 4;
+    }
+    footer{
+        grid-row: 5;
+    }
+
+}
